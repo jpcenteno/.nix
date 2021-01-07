@@ -14,6 +14,9 @@ vmap Q :norm @q<cr>
 colorscheme gruvbox
 
 hi clear CursorLine
+highlight CursorLine gui=underline cterm=underline
+set cursorline
+
 " Highlight tabs and trailing spaces.
 set list lcs=trail:·,tab:»\ ,extends:▶,precedes:◀
 
