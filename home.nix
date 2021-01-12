@@ -23,6 +23,33 @@
     pkgs.elixir
   ];
 
+  programs.zsh = {
+    enable = true;
+    autocd = true;
+    dotDir = ".config/zsh";
+    enableAutosuggestions = true;
+    enableCompletion = true;
+
+    shellAliases = {
+      hm = "home-manager";
+      g = "git";
+    };
+
+    initExtra = ''
+    . "${config.home.homeDirectory}/.nix-profile/etc/profile.d/nix.sh"
+    '';
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = ["git" "kubectl" "vi-mode"];
+    };
+  };
+
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = false;
+  };
+
   programs.neovim = {
     enable = true;
     vimAlias = true;
