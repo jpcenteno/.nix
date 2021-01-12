@@ -19,6 +19,8 @@
   # changes in each release.
   home.stateVersion = "21.03";
 
+  home.sessionVariables.EDITOR = "vim";
+
   home.packages = [
     pkgs.elixir
   ];
