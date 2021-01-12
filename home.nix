@@ -24,6 +24,7 @@
   home.packages = [
     pkgs.elixir
     pkgs.ripgrep
+    pkgs.fzf
   ];
 
   programs.zsh = {
