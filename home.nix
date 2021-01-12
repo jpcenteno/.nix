@@ -23,6 +23,7 @@
 
   home.packages = [
     pkgs.elixir
+    pkgs.ripgrep
   ];
 
   programs.zsh = {
