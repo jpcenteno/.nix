@@ -21,10 +21,11 @@
 
   home.sessionVariables.EDITOR = "vim";
 
-  home.packages = [
-    pkgs.elixir
-    pkgs.ripgrep
-    pkgs.fzf
+  home.packages = with pkgs; [
+    elixir
+    ripgrep
+    fzf
+    nodePackages.npm
   ];
 
   programs.zsh = {
