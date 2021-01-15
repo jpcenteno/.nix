@@ -19,7 +19,9 @@ set smartcase
 
 " UI ===========================================================================
 
-colorscheme gruvbox
+set background=light
+let g:one_allow_italics = 1
+colorscheme one
 
 hi clear CursorLine
 highlight CursorLine gui=underline cterm=underline
