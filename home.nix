@@ -22,9 +22,16 @@
   home.sessionVariables.EDITOR = "vim";
 
   home.packages = with pkgs; [
-    elixir
+    # Tools
     ripgrep
     fzf
+
+    # Lang -> Elixir
+    elixir
+    nodejs
+
+    # Lang -> JavaScript
+    nodejs
     nodePackages.npm
   ];
 
