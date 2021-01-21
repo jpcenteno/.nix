@@ -11,11 +11,7 @@ vmap Q :norm @q<cr>
 
 " Search =======================================================================
 
-" /copyright   ==> Case insensitive
-" /Copyright   ==> Case sensitive
-" /copyright\C ==> Case sensitive
-" /Copyright\c ==> Case insensitive
-set smartcase
+set ignorecase
 
 " UI ===========================================================================
 
