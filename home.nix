@@ -77,6 +77,7 @@
 
       # Elixir
       vim-elixir
+      alchemist-vim
 
       # Julia
       julia-vim
