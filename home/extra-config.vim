@@ -34,3 +34,7 @@ nnoremap <leader>tf :NERDTreeFind<CR>
 let g:ctrlp_map = '<leader>sp'
 let g:ctrlp_cmd = 'CtrlP'
 nnoremap <leader>sb :CtrlPBuffer<CR>
+
+" Programming ==================================================================
+
+autocmd BufWritePost *.exs,*.ex silent :!mix format %
