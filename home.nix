@@ -25,6 +25,7 @@
     # Tools
     ripgrep
     fzf
+    ranger
 
     # Lang -> Elixir
     elixir
