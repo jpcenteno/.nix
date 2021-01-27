@@ -26,6 +26,9 @@ set cursorline
 " Highlight tabs and trailing spaces.
 set list lcs=trail:·,tab:»\ ,extends:▶,precedes:◀
 
+" Line wrapping.
+set nowrap
+
 " NERDTree
 nnoremap <leader>tt :NERDTreeToggle<CR>
 nnoremap <leader>tf :NERDTreeFind<CR>
