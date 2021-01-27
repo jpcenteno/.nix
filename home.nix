@@ -23,6 +23,7 @@
 
   home.packages = with pkgs; [
     # Tools
+    docker
     ripgrep
     fzf
     ranger
