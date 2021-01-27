@@ -35,6 +35,9 @@
     # Lang -> JavaScript
     nodejs
     nodePackages.npm
+
+    # Lang -> PostgreSQL
+    postgresql
   ];
 
   programs.zsh = {
