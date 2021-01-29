@@ -9,6 +9,16 @@ let maplocalleader=","
 nmap Q @q
 vmap Q :norm @q<cr>
 
+nmap Y y$
+" Copy to clipboard with <leader>c
+nmap <leader>cy "*y
+nmap <leader>cY "*y$
+vmap <leader>cy "*y
+nmap <leader>cp "*p
+vmap <leader>cp "*p
+
+set mouse=a
+
 " == Search and navigation =====================================================
 
 set ignorecase
