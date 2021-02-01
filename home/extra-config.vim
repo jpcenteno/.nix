@@ -34,9 +34,7 @@ nnoremap <leader>sb :CtrlPBuffer<CR>
 
 " == UI ========================================================================
 
-set background=light
-let g:one_allow_italics = 1
-colorscheme one
+colorscheme gruvbox
 
 hi clear CursorLine
 highlight CursorLine gui=underline cterm=underline

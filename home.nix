@@ -102,7 +102,7 @@
       vim-surround
 
       # UI ===================================================================
-      vim-one
+      gruvbox
       nerdtree
       ctrlp-vim
     ];
