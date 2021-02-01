@@ -41,6 +41,14 @@
     postgresql
   ];
 
+  programs.git = {
+    enable = true;
+    userName  = "Joaquín P. Centeno";
+    userEmail = "jpcenteno@users.noreply.github.com";
+    extraConfig = builtins.readFile ./home/git-extra-config;
+  };
+
+
   programs.zsh = {
     enable = true;
     autocd = true;
