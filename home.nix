@@ -27,6 +27,7 @@
     ripgrep
     fzf
     ranger
+    exercism
 
     # Lang -> Elixir
     elixir
