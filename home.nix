@@ -24,6 +24,7 @@
   home.packages = with pkgs; [
     # Tools
     docker
+    docker-compose
     ripgrep
     fzf
     ranger
