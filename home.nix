@@ -29,6 +29,7 @@
     fzf
     ranger
     exercism
+    taskwarrior
 
     # Lang -> Elixir
     elixir
@@ -60,6 +61,7 @@
     shellAliases = {
       hm = "home-manager";
       g = "git";
+      t = "task";
     };
 
     initExtra = ''
