@@ -45,6 +45,9 @@ in
 
     # Lang -> PostgreSQL
     postgresql
+
+    # Lang -> Python
+    python3
   ];
 
   programs.git = {
