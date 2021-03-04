@@ -34,6 +34,7 @@ in
     ranger
     exercism
     taskwarrior
+    exiftool
 
     # Lang -> Elixir
     elixir
@@ -69,6 +70,7 @@ in
       hm = "home-manager";
       g = "git";
       t = "task";
+      removeexif = "exiftool -all=";
     };
 
     initExtra = ''
