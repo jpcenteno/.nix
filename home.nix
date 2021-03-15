@@ -100,12 +100,19 @@ in
     plugins = with pkgs.vimPlugins; [
       # Programming languages ================================================
 
+      # Clojure
+      vim-fireplace
+
       # Elixir
       vim-elixir
       alchemist-vim
 
       # Julia
       julia-vim
+
+      # LISP
+      vim-sexp
+      vim-sexp-mappings-for-regular-people
 
       # Nix language
       vim-nix
