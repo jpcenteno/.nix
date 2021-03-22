@@ -126,4 +126,31 @@ in
       ctrlp-vim
     ];
   };
+
+  programs.tmux = {
+    enable = true;
+    keyMode = "vi";
+
+    shortcut = "b";
+    baseIndex = 1; # Start indexing from 1, like the keyboard.
+    clock24 = true; # Use 24hr clock.
+
+    extraConfig = ''
+      bind v split-window -h  # Analog to vi `:vsp`.
+      bind h split-window -v  # Analog to vi `:sp`.
+      unbind '"'
+      unbind %
+
+      # No <esc> delay, as this is annoying for Vim.
+      set -s escape-time 0
+
+      # Status Bar
+      set -g status-position top
+      set -g status-justify left
+      set -g status-style 'bg=colour0 fg=colour15' # 0 => black, 15 => white
+      set -g status-right ' [ #%m/%d %H:%M:%S ] '
+      setw -g window-status-current-format ' { #I => #W #F }'
+      setw -g window-status-format ' { #I => #W #F }'
+    '';
+  };
 }
