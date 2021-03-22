@@ -34,7 +34,8 @@ nnoremap <leader>sb :CtrlPBuffer<CR>
 
 " == UI ========================================================================
 
-colorscheme gruvbox
+colorscheme default
+set bg=light
 
 hi clear CursorLine
 highlight CursorLine gui=underline cterm=underline
