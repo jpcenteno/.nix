@@ -36,6 +36,7 @@ in
     taskwarrior
     kubectl
     exiftool
+    exercism
 
     # Lang -> Elixir
     elixir
