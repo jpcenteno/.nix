@@ -41,6 +41,9 @@ in
     # Lang -> Elixir
     elixir
 
+    # Lang -> Erlang
+    erlang
+
     # Lang -> JavaScript
     nodejs
     nodePackages.npm
