@@ -40,7 +40,6 @@ in
 
     # Lang -> Elixir
     elixir
-    nodejs
 
     # Lang -> JavaScript
     nodejs
