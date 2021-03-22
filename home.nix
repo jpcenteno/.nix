@@ -34,6 +34,7 @@ in
     ranger
     exercism
     taskwarrior
+    kubectl
     exiftool
 
     # Lang -> Elixir
