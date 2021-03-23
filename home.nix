@@ -25,12 +25,26 @@ in
 
   home.sessionVariables.EDITOR = "vim";
 
+  # Use `fd (1)` instead of `find (1)` as the default input command for `fzf
+  # (1)`.
+  #
+  # Options:
+  # --------
+  # - `--type f` -- only regular files.
+  # - `--hidden` -- Include hidden files
+  # - `--follow` -- Follow symlinks.
+  # - `--exclude .git` -- Exclude the `.git` directory (not covered by `.gitignore`).
+  # - The absence of the option `--no-ignore` instructs `fd` to respect the
+  #   `.gitignore`, `.ignore` and `.fdignore` files.
+  home.sessionVariables.FZF_DEFAULT_COMMAND = "fd --type f --hidden --follow --exclude .git";
+
   home.packages = with pkgs; [
     # Tools
     docker
     docker-compose
     ripgrep
     fzf
+    fd
     ranger
     exercism
     taskwarrior
