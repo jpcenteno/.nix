@@ -27,10 +27,10 @@ set ignorecase
 nnoremap <leader>tt :NERDTreeToggle<CR>
 nnoremap <leader>tf :NERDTreeFind<CR>
 
-" CtrlP
-let g:ctrlp_map = '<leader>sp'
-let g:ctrlp_cmd = 'CtrlP'
-nnoremap <leader>sb :CtrlPBuffer<CR>
+" fzf
+nnoremap <leader>sp :Files<CR>
+nnoremap <leader>sb :Buffers<CR>
+nnoremap <leader>sr :Rg<CR>
 
 " == UI ========================================================================
 
