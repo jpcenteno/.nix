@@ -40,6 +40,7 @@ in
 
   home.packages = with pkgs; [
     # Tools
+    bat
     docker
     docker-compose
     ripgrep
@@ -51,6 +52,7 @@ in
     kubectl
     exiftool
     exercism
+    jq
 
     # Lang -> Elixir
     elixir
