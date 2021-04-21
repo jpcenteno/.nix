@@ -1,3 +1,6 @@
+[pager]
+   branch = false
+
 [alias]
 
     s   = status
