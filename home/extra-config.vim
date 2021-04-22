@@ -34,8 +34,8 @@ nnoremap <leader>sr :Rg<CR>
 
 " == UI ========================================================================
 
-colorscheme default
-set bg=light
+colorscheme gruvbox
+set bg=dark
 
 hi clear CursorLine
 highlight CursorLine gui=underline cterm=underline
