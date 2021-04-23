@@ -1,3 +1,9 @@
+" == Basic Editing =============================================================
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " == Basic Mappings ============================================================
 
 nnoremap ; :
