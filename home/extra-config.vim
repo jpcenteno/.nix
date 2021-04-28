@@ -53,6 +53,12 @@ set list lcs=trail:·,tab:»\ ,extends:▶,precedes:◀
 " Line wrapping.
 set nowrap
 
+" == Snippets ==================================================================
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " == Programming ===============================================================
 
 autocmd BufWritePost *.exs,*.ex silent :!mix format %

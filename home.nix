@@ -143,6 +143,8 @@ in
 
       # Editor Features ======================================================
       vim-surround
+      ultisnips
+      vim-snippets # Snippets for `ultisnips`.
 
       # UI ===================================================================
       gruvbox
