@@ -53,6 +53,7 @@ in
     exiftool
     exercism
     jq
+    ledger
 
     # Lang -> Elixir
     elixir
