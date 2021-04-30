@@ -137,6 +137,9 @@ in
       # Nix language
       vim-nix
 
+      # Swift
+      swift-vim
+
       # Editor Features ======================================================
       vim-surround
 
