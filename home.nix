@@ -55,6 +55,8 @@ in
     exercism
     jq
     ledger
+    niv
+    lorri
 
     # Lang -> Elixir
     elixir
