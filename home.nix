@@ -43,6 +43,7 @@ in
     bat
     docker
     docker-compose
+    docker-credential-helpers
     ripgrep
     fzf
     fd
