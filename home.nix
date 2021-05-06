@@ -134,6 +134,9 @@ in
       # Julia
       julia-vim
 
+      # Ledger
+      vim-ledger
+
       # LISP
       vim-sexp
       vim-sexp-mappings-for-regular-people
@@ -152,6 +155,7 @@ in
       # UI ===================================================================
       gruvbox
       nerdtree
+      undotree
       fzf-vim
     ];
   };
