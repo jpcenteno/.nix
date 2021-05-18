@@ -5,6 +5,10 @@ let
   homeDirectory = builtins.getEnv "HOME";
 in
 {
+  imports = [
+    ./nix-imports/lorri.nix
+  ];
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
