@@ -145,6 +145,9 @@ in
       vim-sexp
       vim-sexp-mappings-for-regular-people
 
+      # Markdown
+      vim-markdown
+
       # Nix language
       vim-nix
 
