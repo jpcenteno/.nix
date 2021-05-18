@@ -51,6 +51,7 @@ in
     exercism
     taskwarrior
     kubectl
+    kubectx # also installs `kubens`.
     exiftool
     exercism
     jq
@@ -95,6 +96,9 @@ in
       g = "git";
       t = "task";
       removeexif = "exiftool -all=";
+      k = "kubectl";
+      kctx = "cubectx";
+      kns = "kubens";
     };
 
     initExtra = ''
