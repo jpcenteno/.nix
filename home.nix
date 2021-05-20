@@ -58,6 +58,7 @@ in
     ledger
     niv
     lorri
+    loc
 
     # Lang -> Elixir
     elixir
