@@ -1,0 +1,7 @@
+priority -50
+
+snippet trans "Transaction" b
+${1:`!v strftime("%Y")`}-${2:`!v strftime("%m")`}-${3:`!v strftime("%d")`} * ${5:Payee}
+    ${6:Assets:Cash}
+    ${7:Expenses}                    ${8:0} ${9:ARS}$0
+endsnippet

@@ -168,6 +168,8 @@ in
     ];
   };
 
+  xdg.configFile."nvim/UltiSnips/ledger.snippets".source = ./home/UltiSnips/ledger.snippets;
+
   programs.tmux = {
     enable = true;
     keyMode = "vi";
