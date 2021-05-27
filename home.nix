@@ -116,9 +116,25 @@ in
     enable = true;
   };
 
+  # This is the prompt I use for my shells. It adds very important contextual
+  # information for my workflow.
   programs.starship = {
     enable = true;
     enableBashIntegration = false;
+    settings = {
+
+      # Display the current Kubernetes context to prevent myself from
+      # deploying shit to the wrong place.
+      kubernetes = {
+        disabled = false;
+        symbol = "⎈ "; # K8s logo.
+        style = "bold blue"; # Color for the k8s brand.
+        context_aliases = {
+          "docker-desktop" = "Docker.app";
+        };
+      };
+
+    };
   };
 
   programs.neovim = {
