@@ -121,6 +121,8 @@ in
   programs.starship = {
     enable = true;
     enableBashIntegration = false;
+
+    # Docs at https://starship.rs/config/
     settings = {
 
       # Display the current Kubernetes context to prevent myself from
@@ -133,6 +135,16 @@ in
           "docker-desktop" = "Docker.app";
         };
       };
+
+      nix_shell = {
+        symbol = "❄ ";
+      };
+
+      # Hide unnecessary pieces of information.
+      elixir.disabled = true;  # Installed Elixir version.
+      nodejs.disabled = true;  # Installed Node.js version.
+      package.disabled = true; # Current package version.
+      python.disabled = true;  # Installed Python version.
 
     };
   };
