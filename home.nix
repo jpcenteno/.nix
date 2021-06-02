@@ -196,6 +196,7 @@ in
       swift-vim
 
       # Editor Features ======================================================
+      auto-pairs
       vim-surround
       ultisnips
       vim-snippets # Snippets for `ultisnips`.
