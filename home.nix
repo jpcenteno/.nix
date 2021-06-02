@@ -110,7 +110,7 @@ in
       t = "task";
       removeexif = "exiftool -all=";
       k = "kubectl";
-      kctx = "cubectx";
+      kctx = "kubectx";
       kns = "kubens";
     };
 
