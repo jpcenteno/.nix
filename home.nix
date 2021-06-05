@@ -130,37 +130,7 @@ in
 
   # This is the prompt I use for my shells. It adds very important contextual
   # information for my workflow.
-  programs.starship = {
-    enable = true;
-    enableBashIntegration = false;
-
-    # Docs at https://starship.rs/config/
-    settings = {
-
-      # Display the current Kubernetes context to prevent myself from
-      # deploying shit to the wrong place.
-      kubernetes = {
-        disabled = false;
-        symbol = "⎈ "; # K8s logo.
-        style = "bold blue"; # Color for the k8s brand.
-        context_aliases = {
-          "docker-desktop" = "Docker.app";
-        };
-      };
-
-      nix_shell = {
-        symbol = "❄ ";
-      };
-
-      # Hide unnecessary pieces of information.
-      elixir.disabled = true;  # Installed Elixir version.
-      nodejs.disabled = true;  # Installed Node.js version.
-      package.disabled = true; # Current package version.
-      python.disabled = true;  # Installed Python version.
-      java.disabled = true;  # Installed Java version.
-
-    };
-  };
+  programs.starship = import ./home/starship.nix;
 
   programs.neovim = {
     enable = true;
