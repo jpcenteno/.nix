@@ -157,6 +157,7 @@ in
       nodejs.disabled = true;  # Installed Node.js version.
       package.disabled = true; # Current package version.
       python.disabled = true;  # Installed Python version.
+      java.disabled = true;  # Installed Java version.
 
     };
   };
