@@ -44,6 +44,7 @@
     perl.disabled = true;
     php.disabled = true;
     purescript.disabled = true;
+    python.disabled = true;
     red.disabled = true;
     ruby.disabled = true;
     rust.disabled = true;
