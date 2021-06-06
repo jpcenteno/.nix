@@ -1,8 +1,12 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 let
   username = builtins.getEnv "USER";
   homeDirectory = builtins.getEnv "HOME";
+
+  # Packages are pined using `Niv`.
+  sources = import ./nix/sources.nix;
+  pkgs = import sources.nixpkgs {};
 in
 {
   imports = [
