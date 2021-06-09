@@ -116,6 +116,7 @@ in
       k = "kubectl";
       kctx = "kubectx";
       kns = "kubens";
+      cdtmp = "cd $(mktemp -d)";
     };
 
     initExtra = ''
