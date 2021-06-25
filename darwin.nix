@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ <home-manager/nix-darwin> ];
+
+  home-manager.useUserPackages = true;
+  home-manager.users.lambda = import ./home.nix;
+
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages =
