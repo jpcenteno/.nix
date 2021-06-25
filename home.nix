@@ -7,6 +7,14 @@ let
   # Packages are pined using `Niv`.
   sources = import ./nix/sources.nix;
   pkgs = import sources.nixpkgs {};
+
+  doom-emacs = pkgs.callPackage (builtins.fetchTarball {
+    url = https://github.com/vlaci/nix-doom-emacs/archive/master.tar.gz;
+  }) {
+    doomPrivateDir = ./home/doom.d;  # Directory containing your config.el init.el
+                                # and packages.el files
+  };
+
 in
 {
   imports = [
@@ -75,6 +83,8 @@ in
     niv
     lorri
     loc
+
+    doom-emacs
 
     # Lang -> Elixir
     elixir
@@ -213,4 +223,8 @@ in
       setw -g window-status-format ' { #I => #W #F }'
     '';
   };
+
+  home.file.".emacs.d/init.el".text = ''
+      (load "default.el")
+  '';
 }
