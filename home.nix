@@ -75,6 +75,8 @@ in
     niv
     lorri
     loc
+    git-crypt
+    gnupg
 
     # Lang -> Elixir
     elixir
