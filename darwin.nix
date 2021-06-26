@@ -1,10 +1,14 @@
 { config, pkgs, ... }:
 
+let
+  current_username = builtins.getEnv "USER";
+
+in
 {
   imports = [ <home-manager/nix-darwin> ];
 
   home-manager.useUserPackages = true;
-  home-manager.users.lambda = import ./home.nix;
+  home-manager.users.${current_username} = import ./home.nix;
 
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
