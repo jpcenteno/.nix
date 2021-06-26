@@ -83,6 +83,8 @@ in
     niv
     lorri
     loc
+    git-crypt
+    gnupg
 
     doom-emacs
 
