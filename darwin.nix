@@ -33,7 +33,7 @@ in
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
 
-  system.defaults.dock.autohide = false;
+  system.defaults.dock.autohide = true;
   system.defaults.dock.show-recents = false;
   system.defaults.dock.showhidden = true;
 
