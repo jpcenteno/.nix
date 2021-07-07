@@ -119,6 +119,7 @@ in
       kctx = "kubectx";
       kns = "kubens";
       cdtmp = "cd $(mktemp -d)";
+      date-iso = "date +%Y-%m-%d";
     };
 
     initExtra = ''
