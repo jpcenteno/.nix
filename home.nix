@@ -78,16 +78,6 @@ in
     git-crypt
     gnupg
 
-    # Lang -> Elixir
-    elixir
-
-    # Lang -> Erlang
-    erlang
-
-    # Lang -> JavaScript
-    nodejs
-    nodePackages.npm
-
     # Lang -> PostgreSQL
     postgresql
 
