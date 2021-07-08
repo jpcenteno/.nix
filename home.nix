@@ -110,6 +110,7 @@ in
       kns = "kubens";
       cdtmp = "cd $(mktemp -d)";
       date-iso = "date +%Y-%m-%d";
+      uuid4 = "python3 -c 'import uuid; print(uuid.uuid4())'";
     };
 
     initExtra = ''
