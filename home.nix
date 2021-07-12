@@ -113,13 +113,9 @@ in
       uuid4 = "python3 -c 'import uuid; print(uuid.uuid4())'";
     };
 
-    initExtra = ''
-    . "${config.home.homeDirectory}/.nix-profile/etc/profile.d/nix.sh"
-    '';
-
     oh-my-zsh = {
       enable = true;
-      plugins = ["git" "kubectl" "vi-mode"];
+      plugins = ["git" "vi-mode"];
     };
   };
 
