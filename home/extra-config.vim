@@ -40,12 +40,7 @@ nnoremap <leader>sr :Rg<CR>
 
 " == UI ========================================================================
 
-colorscheme gruvbox
-set bg=dark
-
 hi clear CursorLine
-highlight CursorLine gui=underline cterm=underline
-set cursorline
 
 " Highlight tabs and trailing spaces.
 set list lcs=trail:·,tab:»\ ,extends:▶,precedes:◀
