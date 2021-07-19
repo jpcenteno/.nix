@@ -78,6 +78,7 @@ in
     loc
     git-crypt
     gnupg
+    shellcheck
 
     # Lang -> PostgreSQL
     postgresql
