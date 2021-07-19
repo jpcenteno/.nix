@@ -68,6 +68,7 @@ in
     taskwarrior
     kubectl
     kubectx # also installs `kubens`.
+    kubernetes-helm
     exiftool
     exercism
     jq
