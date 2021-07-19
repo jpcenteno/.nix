@@ -40,8 +40,11 @@ in
 
   system.defaults.trackpad.Clicking = true;
 
-  # Have the lorri daemon running in the background.
+  # Start the Lorri daemon as a `launchctl` "user agent", which runs on behalf
+  # of the current logged in user.
+  #
   # See: https://github.com/target/lorri/issues/96#issuecomment-579931485
+  # See: https://launchd.info/
   launchd.user.agents.lorri = {
     serviceConfig = {
       WorkingDirectory = (builtins.getEnv "HOME");
