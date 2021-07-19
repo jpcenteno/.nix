@@ -15,6 +15,7 @@ in
   environment.systemPackages =
     [
       pkgs.emacs
+      pkgs.lorri
     ];
 
   # Use a custom configuration.nix location.
@@ -38,4 +39,22 @@ in
   system.defaults.dock.showhidden = true;
 
   system.defaults.trackpad.Clicking = true;
+
+  # Have the lorri daemon running in the background.
+  # See: https://github.com/target/lorri/issues/96#issuecomment-579931485
+  launchd.user.agents.lorri = {
+    serviceConfig = {
+      WorkingDirectory = (builtins.getEnv "HOME");
+      EnvironmentVariables = { };
+      KeepAlive = true;
+      RunAtLoad = true;
+      StandardOutPath = "/var/tmp/lorri.log";
+      StandardErrorPath = "/var/tmp/lorri.log";
+    };
+    script = ''
+        source ${config.system.build.setEnvironment}
+        exec ${pkgs.lorri}/bin/lorri daemon
+    '';
+  };
+
 }

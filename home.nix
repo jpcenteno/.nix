@@ -74,7 +74,6 @@ in
     jq
     ledger
     niv
-    lorri
     loc
     git-crypt
     gnupg
