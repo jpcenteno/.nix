@@ -36,7 +36,8 @@ in
 
   system.defaults.dock.autohide = true;
   system.defaults.dock.show-recents = false;
-  system.defaults.dock.showhidden = true;
+  system.defaults.dock.showhidden = true; # Make icons of hidden apps translucent.
+  system.defaults.dock.tilesize = 48;
 
   system.defaults.trackpad.Clicking = true;
 
