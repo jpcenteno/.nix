@@ -5,6 +5,14 @@
   # Docs at https://starship.rs/config/
   settings = {
 
+    git_branch = {
+      symbol = "枝 ";
+    };
+
+    jobs = {
+      symbol = "zzz";
+    };
+
     # Display the current Kubernetes context to prevent myself from
     # deploying shit to the wrong place.
     kubernetes = {
